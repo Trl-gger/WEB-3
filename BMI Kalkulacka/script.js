@@ -3,7 +3,7 @@ const vyskaInput = document.getElementById('vyska');
 const bmiElement = document.getElementById('bmi');
 const tlacidlo = document.getElementById('vypocitaj');
 
-tlacidlo.addEventListener('click', () => {
+tlacidlo.addEventListener('click', () => { /**S tymto mi pomohlo ai */
     const vaha = parseFloat(vahaInput.value);
     const vyska = parseFloat(vyskaInput.value);
     const bmi = vaha / (vyska * vyska);
