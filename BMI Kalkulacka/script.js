@@ -15,5 +15,5 @@ tlacidlo.addEventListener('click', () => { /**S tymto mi pomohlo ai */
     else if (bmi < 30) kategoria = "Nadváha";
     else kategoria = "Obezita";
 
-    bmiElement.textContent = "Tvoje BMI je " + bmi + " (" + kategoria + ")";
+    bmiElement.textContent = "Tvoje BMI je " + bmi.toFixed(0) + " (" + kategoria + ")";
 }); 
