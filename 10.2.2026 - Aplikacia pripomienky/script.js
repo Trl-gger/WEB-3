@@ -1,16 +1,41 @@
-const ADDBUTTON = document.getElementById("addButton");
-
-ADDBUTTON.addEventListener("click", () => {
-    const TASKLIST = document.getElementById("taskList");
-    const TASKINPUT = document.getElementById("taskInput");
-
-    const TASKTEXT = TASKINPUT.value;
-
-    if (!TASKTEXT) {
-        console.log("Dopln text");
-        return;
+const addButton = document.getElementById('addButton');
+ 
+ 
+ 
+addButton.addEventListener('click',() => {
+    const taskInput = document.getElementById('taskInput');
+    const taskList = document.getElementById('taskList');  
+    const taskText = taskInput.value;
+   
+    if (!taskText){
+        console.log("Nic sa nestalo")
+        return
     }
-
-    let newLi = document.createElement("li")
-
+   
+ 
+    console.log(taskText)
+ 
+ 
+    let newLi = document.createElement('li');
+    newLi.textContent = taskText;
+    console.log(newLi);
+ 
+    let newInput = document.createElement('input');
+    newInput.type = "checkbox"; 
+   
+ 
+ 
+    let newSpan = document.createElement('span');
+   
+ 
+ 
+    let newButton = document.createElement('button');
+ 
+    newLi.appendChild(newInput);
+    newLi.appendChild(newSpan);
+    newLi.appendChild(newButton);
+ 
+ 
+ 
+    document.getElementById('taskList').appendChild(newLi);
 });
