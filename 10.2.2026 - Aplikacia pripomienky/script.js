@@ -11,5 +11,6 @@ ADDBUTTON.addEventListener("click", () => {
         return;
     }
 
-    console.log(TASKTEXT);
+    let newLi = document.createElement("li")
+
 });
