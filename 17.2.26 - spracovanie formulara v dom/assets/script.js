@@ -23,20 +23,27 @@ function handleSubmit(event){
 
     const ineOblasti = document.getElementById
     ("ineOblasti").value.trim();
-    console.log(ineOblasti)
 
     if (ineOblasti){
         vybraneTexy.push(ineOblasti);
     };
 
     const temyText = vybraneTexy.join(", ");
-    console.log (temyText)
+    console.log (temyText);
 
-    function zobrazSpravu(event){
+    function zobrazSpravu(text){
         const spravaElement = document.getElementById("sprava");
+
+        odstavec.textContent = text;
+
+        spravaElement.appendChild(odstavec)
+
+        spravaElement.className = "sprava";
     }
 
+    zobrazSpravu(`Ďakujem za vyplnenie formuláru, ${meno}, toto sú tvoje preferované oblasti =  ${temyText}`);
+};  
 
+const odstavec = document.createElement("p");
+console.log("mngwg" + p)
 
-
-};
