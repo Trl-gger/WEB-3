@@ -20,6 +20,23 @@ function handleSubmit(event){
   const zaskrtnute = poleCheckboxov.filter(checkbox => checkbox.checked) //vytiahn s poľa checkboxov iba tie, ktoré sú zaškrnuté 
 
     const vybraneTexy = zaskrtnute.map(checkbox => checkbox.value);
-    console.log('Vybrané témy:', vybraneTexy);
-};
 
+    const ineOblasti = document.getElementById
+    ("ineOblasti").value.trim();
+    console.log(ineOblasti)
+
+    if (ineOblasti){
+        vybraneTexy.push(ineOblasti);
+    };
+
+    const temyText = vybraneTexy.join(", ");
+    console.log (temyText)
+
+    function zobrazSpravu(event){
+        const spravaElement = document.getElementById("sprava");
+    }
+
+
+
+
+};
