@@ -5,7 +5,7 @@ teploty.forEach(function(teplota) {
     spoluTeploty = spoluTeploty + teplota;
     console.log(spoluTeploty + "=" + teplota);
 
-    if (teplota < 0) {
+    if (teplota <= 0) {
         console.log("mraz");
     } else if (teplota < 4) {
         console.log("chladno");
@@ -15,4 +15,4 @@ teploty.forEach(function(teplota) {
 });
 
 let priemer = spoluTeploty / teploty.length;
-console.log(priemer);
+console.log(priemer.toFixed(0));
