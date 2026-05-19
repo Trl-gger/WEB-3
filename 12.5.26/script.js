@@ -93,7 +93,7 @@ const nahodneCisloBtn = document.getElementById('nahodneCisloBtn')
 nahodneCisloBtn.addEventListener('click', nahodneCislo);
 
 function nahodnaFarba(){
-    const farby = ['#ff6b6b', '#8BDFDD', '#F48F68', '#FFE394', '#C9CAAC', '#CCD67F'];//pole kde je 5/6 farbieb a random vygeneruje jednu z nich
+    const farby = ['#ff6b6b', '#8BDFDD', '#F48F68', '#FFE394', '#C9CAAC', '#CCD67F'];
     const nahodnaFarba = Math.floor(Math.random() * farby.length);
     vysledokNahodne.style.color = farby[nahodnaFarba];
 }
